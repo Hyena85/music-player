@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Youtube Player</title>
+</head>
+<body>
+    <div class="youtube-container" id="youtube-container">
+        <div class="screen" id="screen"></div>
+    </div>
+        
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="" alt= "" id="cover">
+        </div>
+        <div class="controller">
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>            
+            </div>
+            <div class="sound-container">
+                <button id="sound" class="sound-btn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <form id="form">
+        <input type="text" id="text" placeholder="유투브 주소 입력">
+        <button class="submit-btn">Add</button>
+    </form>
+
+    <ul id="list" class="list"></ul>
+    
+    <script src="https://www.youtube.com/player_api"></script>
+    <script src="parseurl.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
